@@ -186,6 +186,18 @@ function PlasmicHome__RenderFunc(props: {
                     ? "Simple, accurate weather forecasts for the world \nwe live in"
                     : "Simple, accurate weather forecasts\nfor the world we live in"}
                 </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__i2Ddb
+                  )}
+                >
+                  {hasVariant(globalVariants, "screen", "mobile")
+                    ? "Currently undergoing maintenance and upgrades, your APIs will continue to work as expected."
+                    : "Currently undergoing maintenance and upgrades, your \nAPIs will continue to work as expected."}
+                </div>
               </p.Stack>
 
               {true ? (

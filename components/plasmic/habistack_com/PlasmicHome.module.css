@@ -242,6 +242,23 @@
     padding-bottom: 0px;
   }
 }
+.text__i2Ddb {
+  font-size: 20px;
+  text-align: center;
+  max-width: 768px;
+  position: relative;
+  align-self: center;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__i2Ddb {
+    font-size: 24px;
+    text-align: center;
+    max-width: 768px;
+    position: relative;
+    align-self: center;
+    padding-bottom: 0px;
+  }
+}
 .freeBox__sajKs {
   position: relative;
   flex-direction: row;

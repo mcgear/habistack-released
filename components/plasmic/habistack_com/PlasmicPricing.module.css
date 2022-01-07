@@ -325,6 +325,6 @@
 .faq__uK1Lh:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
 }
-.footer:global(.__wab_instance) {
+.habistackFooter:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
 }

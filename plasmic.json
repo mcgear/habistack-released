@@ -263,6 +263,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "m8MF3DD_Un",
+          "name": "HabistackFooter",
+          "type": "managed",
+          "projectId": "hhYAirYt8bU9TEjNgFzExf",
+          "renderModuleFilePath": "plasmic/habistack_com/PlasmicHabistackFooter.tsx",
+          "importSpec": {
+            "modulePath": "HabistackFooter.tsx"
+          },
+          "cssFilePath": "plasmic/habistack_com/PlasmicHabistackFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -375,6 +388,11 @@
           "id": "234Oqlix5xbb",
           "name": "SearchsvgIcon",
           "moduleFilePath": "plasmic/habistack_com/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "DxCDUHw3i3",
+          "name": "FathymLogoGreensvgIcon",
+          "moduleFilePath": "plasmic/habistack_com/icons/PlasmicIcon__FathymLogoGreensvg.tsx"
         }
       ],
       "images": [
@@ -402,6 +420,21 @@
           "id": "govABzEk4CkZ",
           "name": "AngryThinky.svg",
           "filePath": "../public/plasmic/habistack_com/images/angryThinkysvg.svg"
+        },
+        {
+          "id": "cwF7lym__",
+          "name": "MicrosoftTeams-image (7).png",
+          "filePath": "../public/plasmic/habistack_com/images/microsoftTeamsImage7Png.png"
+        },
+        {
+          "id": "Ov2qEcSmL",
+          "name": "instagram-icon",
+          "filePath": "../public/plasmic/habistack_com/images/instagramIcon.png"
+        },
+        {
+          "id": "Yzobj_f3_",
+          "name": "copyright-icon",
+          "filePath": "../public/plasmic/habistack_com/images/copyrightIcon.png"
         }
       ],
       "indirect": false,

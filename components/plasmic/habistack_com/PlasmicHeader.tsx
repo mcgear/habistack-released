@@ -42,7 +42,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as projectcss from "./plasmic_habistack_com.module.css"; // plasmic-import: hhYAirYt8bU9TEjNgFzExf/projectcss
 import * as sty from "./PlasmicHeader.module.css"; // plasmic-import: aZ_J2rMYPrG/css
 
-import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: IBdwO7K4X226/icon
+import FathymLogoGreensvgIcon from "./icons/PlasmicIcon__FathymLogoGreensvg"; // plasmic-import: DxCDUHw3i3/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: 5jC4HENzcXyn/icon
 
 export type PlasmicHeader__VariantMembers = {};
@@ -95,7 +95,7 @@ function PlasmicHeader__RenderFunc(props: {
         href={"/" as const}
         platform={"nextjs"}
       >
-        <LogoIcon
+        <FathymLogoGreensvgIcon
           data-plasmic-name={"svg"}
           data-plasmic-override={overrides.svg}
           className={classNames(projectcss.all, sty.svg)}

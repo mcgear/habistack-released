@@ -38,7 +38,6 @@ import Section from "../../Section"; // plasmic-import: xpx1dd3WX7GW/component
 import Button from "../../Button"; // plasmic-import: Tz4a3lVI6CGf/component
 import FeatureCard from "../../FeatureCard"; // plasmic-import: 05tCG29nEfK/component
 import Testimonial from "../../Testimonial"; // plasmic-import: uXYHN1Smh9Q/component
-import HomeCta from "../../HomeCta"; // plasmic-import: qhKuHWsMEEf/component
 import Footer from "../../Footer"; // plasmic-import: tnj0d_eW4Ts/component
 
 import { useScreenVariants as useScreenVariants_01LSGjai6PPg } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 01lSGjai6pPg/globalVariant
@@ -81,8 +80,6 @@ export type PlasmicHome__OverridesType = {
   howItWorks?: p.Flex<typeof Section>;
   validation?: p.Flex<typeof Section>;
   testimonial?: p.Flex<typeof Testimonial>;
-  homeCta?: p.Flex<typeof HomeCta>;
-  footer?: p.Flex<typeof Footer>;
 };
 
 export interface DefaultHomeProps {
@@ -237,12 +234,16 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"none" as const}
                   displayMinHeight={"0" as const}
                   displayMinWidth={"0" as const}
-                  displayWidth={"100%" as const}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? ("100%" as const)
+                      : ("632px /* plasmic-token: -_9hWElktusQ */" as const)
+                  }
                   src={{
-                    src: "/plasmic/habistack_com/images/angryThinkysvg.svg",
-                    fullWidth: 150,
-                    fullHeight: 150,
-                    aspectRatio: 1
+                    src: "/plasmic/habistack_com/images/microsoftTeamsImage7Png.png",
+                    fullWidth: 1768,
+                    fullHeight: 1722,
+                    aspectRatio: undefined
                   }}
                 />
               </div>
@@ -558,19 +559,14 @@ function PlasmicHome__RenderFunc(props: {
             </Section>
           ) : null}
           {true ? (
-            <HomeCta
-              data-plasmic-name={"homeCta"}
-              data-plasmic-override={overrides.homeCta}
-              className={classNames("__wab_instance", sty.homeCta)}
-            />
-          ) : null}
-          {true ? (
             <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
+              className={classNames("__wab_instance", sty.footer__rKGn)}
             />
           ) : null}
+
+          <Footer
+            className={classNames("__wab_instance", sty.footer___79PrO)}
+          />
         </p.Stack>
       </div>
     </React.Fragment>
@@ -586,9 +582,7 @@ const PlasmicDescendants = {
     "columns",
     "howItWorks",
     "validation",
-    "testimonial",
-    "homeCta",
-    "footer"
+    "testimonial"
   ],
   header: ["header"],
   topSection: ["topSection"],
@@ -596,9 +590,7 @@ const PlasmicDescendants = {
   columns: ["columns"],
   howItWorks: ["howItWorks"],
   validation: ["validation", "testimonial"],
-  testimonial: ["testimonial"],
-  homeCta: ["homeCta"],
-  footer: ["footer"]
+  testimonial: ["testimonial"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -612,8 +604,6 @@ type NodeDefaultElementType = {
   howItWorks: typeof Section;
   validation: typeof Section;
   testimonial: typeof Testimonial;
-  homeCta: typeof HomeCta;
-  footer: typeof Footer;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -684,8 +674,6 @@ export const PlasmicHome = Object.assign(
     howItWorks: makeNodeComponent("howItWorks"),
     validation: makeNodeComponent("validation"),
     testimonial: makeNodeComponent("testimonial"),
-    homeCta: makeNodeComponent("homeCta"),
-    footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHome
     internalVariantProps: PlasmicHome__VariantProps,

@@ -50,8 +50,8 @@
   align-items: stretch;
   justify-content: space-between;
   min-width: 0;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
+  margin-left: calc(0px - 30px);
+  width: calc(100% + 30px);
 }
 .freeBox__yh9U6 > :global(.__wab_flex-container) > *,
 .freeBox__yh9U6 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -61,7 +61,7 @@
   > :global(.__wab_slot)
   > picture
   > img {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__yh9U6 {
@@ -91,11 +91,61 @@
     margin-top: 32px;
   }
 }
+.freeBox___9WTvX {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.freeBox___9WTvX > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin-left: calc(0px - 32px);
+  width: calc(100% + 32px);
+}
+.freeBox___9WTvX > :global(.__wab_flex-container) > *,
+.freeBox___9WTvX > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___9WTvX > :global(.__wab_flex-container) > picture > img,
+.freeBox___9WTvX
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 32px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___9WTvX {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___9WTvX > :global(.__wab_flex-container) {
+    flex-direction: column;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 32px);
+    height: calc(100% + 32px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___9WTvX > :global(.__wab_flex-container) > *,
+  .freeBox___9WTvX > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .freeBox___9WTvX > :global(.__wab_flex-container) > picture > img,
+  .freeBox___9WTvX
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+}
 .freeBox___3B7Ie {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 128px;
+  width: 154px;
   flex-shrink: 0;
 }
 .freeBox___3B7Ie > :global(.__wab_flex-container) {
@@ -165,56 +215,6 @@
 .root .httpsfathymcomenterpriseAgreement:hover {
   text-decoration-line: underline;
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
-}
-.freeBox___9WTvX {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-}
-.freeBox___9WTvX > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-end;
-  margin-left: calc(0px - 32px);
-  width: calc(100% + 32px);
-}
-.freeBox___9WTvX > :global(.__wab_flex-container) > *,
-.freeBox___9WTvX > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.freeBox___9WTvX > :global(.__wab_flex-container) > picture > img,
-.freeBox___9WTvX
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 32px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___9WTvX {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___9WTvX > :global(.__wab_flex-container) {
-    flex-direction: column;
-    margin-left: calc(0px - 0px);
-    width: calc(100% + 0px);
-    margin-top: calc(0px - 32px);
-    height: calc(100% + 32px);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___9WTvX > :global(.__wab_flex-container) > *,
-  .freeBox___9WTvX > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-  .freeBox___9WTvX > :global(.__wab_flex-container) > picture > img,
-  .freeBox___9WTvX
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
-    margin-left: 0px;
-    margin-top: 32px;
-  }
 }
 .freeBox__kj2W {
   display: flex;
@@ -330,13 +330,13 @@
 .root .httpswwwhabistackcomblog:hover {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
-.supportfathymcom {
+.mailtosupportfathymcom {
   position: relative;
   color: #666666 /* plasmic-token: qEtqsP0-AcEg */;
   font-size: 14px;
   font-family: "Encode Sans Semi Condensed", sans-serif;
 }
-.root .supportfathymcom:hover {
+.root .mailtosupportfathymcom:hover {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
 .freeBox__e8C2 {
@@ -368,13 +368,13 @@
   font-size: 16px;
   font-family: "Encode Sans Semi Condensed", sans-serif;
 }
-.link__lXfQk {
+.httpswwwfathymcom {
   position: relative;
   color: #666666 /* plasmic-token: qEtqsP0-AcEg */;
   font-size: 14px;
   font-family: "Encode Sans Semi Condensed", sans-serif;
 }
-.root .link__lXfQk:hover {
+.root .httpswwwfathymcom:hover {
   color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
 }
 .freeBox__iwpD {
@@ -507,15 +507,13 @@
   align-items: stretch;
   justify-content: flex-start;
 }
-.link___9Hi3 {
+.text__wi6PH {
   position: relative;
-  color: #666666 /* plasmic-token: qEtqsP0-AcEg */;
   height: auto;
+  width: auto;
   font-size: 14px;
+  color: #666666 /* plasmic-token: qEtqsP0-AcEg */;
   font-family: "Encode Sans Semi Condensed", sans-serif;
-}
-.root .link___9Hi3:hover {
-  text-decoration-line: underline;
 }
 .img {
   position: relative;
@@ -562,41 +560,41 @@
   position: relative;
   flex-shrink: 0;
 }
-.svg__xyMPx {
+.twitter {
   position: relative;
   object-fit: cover;
   color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
   width: 32px;
   height: 32px;
 }
-.root .svg__xyMPx:hover {
+.root .twitter:hover {
   color: rgb(24, 25, 26) /* plasmic-token: dph1wZ7NjV9 */;
 }
 .httpsgithubcomfathym:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.svg__uxqZo {
+.gitHub {
   position: relative;
   object-fit: cover;
   color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
   width: 32px;
   height: 32px;
 }
-.root .svg__uxqZo:hover {
+.root .gitHub:hover {
   color: rgb(24, 25, 26) /* plasmic-token: dph1wZ7NjV9 */;
 }
 .httpswwwfacebookcomFathymInc:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
 }
-.svg___4Ravz {
+.facebook {
   position: relative;
   object-fit: cover;
   color: rgb(101, 103, 107) /* plasmic-token: vaTuh5tFL3B */;
   width: 32px;
   height: 32px;
 }
-.root .svg___4Ravz:hover {
+.root .facebook:hover {
   color: rgb(24, 25, 26) /* plasmic-token: dph1wZ7NjV9 */;
 }

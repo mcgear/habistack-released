@@ -74,13 +74,17 @@ export type PlasmicFooter__OverridesType = {
   httpswwwproadjectcom?: p.Flex<"a"> & Partial<LinkProps>;
   httpswwwhabistackcomdocs?: p.Flex<"a"> & Partial<LinkProps>;
   httpswwwhabistackcomblog?: p.Flex<"a"> & Partial<LinkProps>;
-  supportfathymcom?: p.Flex<"a"> & Partial<LinkProps>;
+  mailtosupportfathymcom?: p.Flex<"a"> & Partial<LinkProps>;
+  httpswwwfathymcom?: p.Flex<"a"> & Partial<LinkProps>;
   textInput?: p.Flex<typeof TextInput>;
   button?: p.Flex<typeof Button>;
   img?: p.Flex<typeof p.PlasmicImg>;
   fathymIt?: p.Flex<typeof IconLink>;
+  twitter?: p.Flex<"svg">;
   httpsgithubcomfathym?: p.Flex<typeof IconLink>;
+  gitHub?: p.Flex<"svg">;
   httpswwwfacebookcomFathymInc?: p.Flex<typeof IconLink>;
+  facebook?: p.Flex<"svg">;
   textbox?: p.Flex<typeof TextInput>;
 };
 
@@ -121,73 +125,78 @@ function PlasmicFooter__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox___3B7Ie)}
+          className={classNames(projectcss.all, sty.freeBox___9WTvX)}
         >
-          <IconLink
-            data-plasmic-name={"iconLink"}
-            data-plasmic-override={overrides.iconLink}
-            className={classNames("__wab_instance", sty.iconLink)}
-            icon={
-              <LogoIcon
-                className={classNames(projectcss.all, sty.svg__nVuo)}
-                role={"img"}
-              />
-            }
-          />
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox___3B7Ie)}
+          >
+            <IconLink
+              data-plasmic-name={"iconLink"}
+              data-plasmic-override={overrides.iconLink}
+              className={classNames("__wab_instance", sty.iconLink)}
+              icon={
+                <LogoIcon
+                  className={classNames(projectcss.all, sty.svg__nVuo)}
+                  role={"img"}
+                />
+              }
+            />
 
-          <div className={classNames(projectcss.all, sty.freeBox___1Gcwe)}>
+            <div className={classNames(projectcss.all, sty.freeBox___1Gcwe)}>
+              <p.PlasmicLink
+                data-plasmic-name={"httpsfathymcomtermsOfServices"}
+                data-plasmic-override={overrides.httpsfathymcomtermsOfServices}
+                className={classNames(
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.httpsfathymcomtermsOfServices
+                )}
+                component={Link}
+                href={"https://fathym.com/terms-of-services/" as const}
+                platform={"nextjs"}
+                target={"_blank" as const}
+              >
+                {"Terms of Services"}
+              </p.PlasmicLink>
+            </div>
+
             <p.PlasmicLink
-              data-plasmic-name={"httpsfathymcomtermsOfServices"}
-              data-plasmic-override={overrides.httpsfathymcomtermsOfServices}
+              data-plasmic-name={"httpsfathymcomprivacyPolicy"}
+              data-plasmic-override={overrides.httpsfathymcomprivacyPolicy}
               className={classNames(
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.httpsfathymcomtermsOfServices
+                sty.httpsfathymcomprivacyPolicy
               )}
               component={Link}
-              href={"https://fathym.com/terms-of-services/#" as const}
+              href={"https://fathym.com/privacy-policy/" as const}
               platform={"nextjs"}
+              target={"_blank" as const}
             >
-              {"Terms of Services"}
+              {"Privacy Policy"}
             </p.PlasmicLink>
-          </div>
 
-          <p.PlasmicLink
-            data-plasmic-name={"httpsfathymcomprivacyPolicy"}
-            data-plasmic-override={overrides.httpsfathymcomprivacyPolicy}
-            className={classNames(
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.httpsfathymcomprivacyPolicy
-            )}
-            component={Link}
-            href={"https://fathym.com/privacy-policy/#" as const}
-            platform={"nextjs"}
-          >
-            {"Privacy Policy"}
-          </p.PlasmicLink>
+            <p.PlasmicLink
+              data-plasmic-name={"httpsfathymcomenterpriseAgreement"}
+              data-plasmic-override={
+                overrides.httpsfathymcomenterpriseAgreement
+              }
+              className={classNames(
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.httpsfathymcomenterpriseAgreement
+              )}
+              component={Link}
+              href={"https://fathym.com/enterprise-agreement/" as const}
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              {"Enterprise Agreement"}
+            </p.PlasmicLink>
+          </p.Stack>
 
-          <p.PlasmicLink
-            data-plasmic-name={"httpsfathymcomenterpriseAgreement"}
-            data-plasmic-override={overrides.httpsfathymcomenterpriseAgreement}
-            className={classNames(
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.httpsfathymcomenterpriseAgreement
-            )}
-            component={Link}
-            href={"https://fathym.com/enterprise-agreement/#" as const}
-            platform={"nextjs"}
-          >
-            {"Enterprise Agreement"}
-          </p.PlasmicLink>
-        </p.Stack>
-
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox___9WTvX)}
-        >
           <p.Stack
             as={"div"}
             hasGap={true}
@@ -244,7 +253,7 @@ function PlasmicFooter__RenderFunc(props: {
                 sty.httpswwwhabistackcom
               )}
               component={Link}
-              href={"https://www.habistack.com/#" as const}
+              href={"https://www.habistack.com/" as const}
               platform={"nextjs"}
               target={"_blank" as const}
             >
@@ -260,7 +269,7 @@ function PlasmicFooter__RenderFunc(props: {
                 sty.httpswwwproadjectcom
               )}
               component={Link}
-              href={"https://www.proadject.com/#" as const}
+              href={"https://www.proadject.com/" as const}
               platform={"nextjs"}
               target={"_blank" as const}
             >
@@ -292,8 +301,9 @@ function PlasmicFooter__RenderFunc(props: {
                 sty.httpswwwhabistackcomdocs
               )}
               component={Link}
-              href={"https://www.habistack.com/docs#" as const}
+              href={"https://www.habistack.com/docs" as const}
               platform={"nextjs"}
+              target={"_blank" as const}
             >
               {"Documentation"}
             </p.PlasmicLink>
@@ -307,22 +317,23 @@ function PlasmicFooter__RenderFunc(props: {
                 sty.httpswwwhabistackcomblog
               )}
               component={Link}
-              href={"https://www.habistack.com/blog#" as const}
+              href={"https://www.habistack.com/blog" as const}
               platform={"nextjs"}
+              target={"_blank" as const}
             >
               {"Blog"}
             </p.PlasmicLink>
 
             <p.PlasmicLink
-              data-plasmic-name={"supportfathymcom"}
-              data-plasmic-override={overrides.supportfathymcom}
+              data-plasmic-name={"mailtosupportfathymcom"}
+              data-plasmic-override={overrides.mailtosupportfathymcom}
               className={classNames(
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.supportfathymcom
+                sty.mailtosupportfathymcom
               )}
               component={Link}
-              href={"support@fathym.com#" as const}
+              href={"mailto:support@fathym.com" as const}
               platform={"nextjs"}
               target={"_blank" as const}
             >
@@ -346,13 +357,15 @@ function PlasmicFooter__RenderFunc(props: {
             </div>
 
             <p.PlasmicLink
+              data-plasmic-name={"httpswwwfathymcom"}
+              data-plasmic-override={overrides.httpswwwfathymcom}
               className={classNames(
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link__lXfQk
+                sty.httpswwwfathymcom
               )}
               component={Link}
-              href={"https://fathym.com/#" as const}
+              href={"https://www.fathym.com/" as const}
               platform={"nextjs"}
               target={"_blank" as const}
             >
@@ -427,18 +440,15 @@ function PlasmicFooter__RenderFunc(props: {
         className={classNames(projectcss.all, sty.freeBox__jqjPm)}
       >
         <div className={classNames(projectcss.all, sty.freeBox___8JHt)}>
-          <p.PlasmicLink
+          <div
             className={classNames(
-              projectcss.a,
+              projectcss.all,
               projectcss.__wab_text,
-              sty.link___9Hi3
+              sty.text__wi6PH
             )}
-            component={Link}
-            href={"" as const}
-            platform={"nextjs"}
           >
             {"Copyright "}
-          </p.PlasmicLink>
+          </div>
 
           <p.PlasmicImg
             data-plasmic-name={"img"}
@@ -482,7 +492,9 @@ function PlasmicFooter__RenderFunc(props: {
             className={classNames("__wab_instance", sty.fathymIt)}
             icon={
               <TwitterIconIcon
-                className={classNames(projectcss.all, sty.svg__xyMPx)}
+                data-plasmic-name={"twitter"}
+                data-plasmic-override={overrides.twitter}
+                className={classNames(projectcss.all, sty.twitter)}
                 role={"img"}
               />
             }
@@ -494,7 +506,9 @@ function PlasmicFooter__RenderFunc(props: {
             className={classNames("__wab_instance", sty.httpsgithubcomfathym)}
             icon={
               <GithubIconIcon
-                className={classNames(projectcss.all, sty.svg__uxqZo)}
+                data-plasmic-name={"gitHub"}
+                data-plasmic-override={overrides.gitHub}
+                className={classNames(projectcss.all, sty.gitHub)}
                 role={"img"}
               />
             }
@@ -509,7 +523,9 @@ function PlasmicFooter__RenderFunc(props: {
             )}
             icon={
               <FacebookIconIcon
-                className={classNames(projectcss.all, sty.svg___4Ravz)}
+                data-plasmic-name={"facebook"}
+                data-plasmic-override={overrides.facebook}
+                className={classNames(projectcss.all, sty.facebook)}
                 role={"img"}
               />
             }
@@ -533,14 +549,18 @@ const PlasmicDescendants = {
     "httpswwwproadjectcom",
     "httpswwwhabistackcomdocs",
     "httpswwwhabistackcomblog",
-    "supportfathymcom",
+    "mailtosupportfathymcom",
+    "httpswwwfathymcom",
     "textInput",
     "textbox",
     "button",
     "img",
     "fathymIt",
+    "twitter",
     "httpsgithubcomfathym",
-    "httpswwwfacebookcomFathymInc"
+    "gitHub",
+    "httpswwwfacebookcomFathymInc",
+    "facebook"
   ],
   iconLink: ["iconLink"],
   httpsfathymcomtermsOfServices: ["httpsfathymcomtermsOfServices"],
@@ -552,13 +572,17 @@ const PlasmicDescendants = {
   httpswwwproadjectcom: ["httpswwwproadjectcom"],
   httpswwwhabistackcomdocs: ["httpswwwhabistackcomdocs"],
   httpswwwhabistackcomblog: ["httpswwwhabistackcomblog"],
-  supportfathymcom: ["supportfathymcom"],
+  mailtosupportfathymcom: ["mailtosupportfathymcom"],
+  httpswwwfathymcom: ["httpswwwfathymcom"],
   textInput: ["textInput", "textbox", "button"],
   button: ["button"],
   img: ["img"],
-  fathymIt: ["fathymIt"],
-  httpsgithubcomfathym: ["httpsgithubcomfathym"],
-  httpswwwfacebookcomFathymInc: ["httpswwwfacebookcomFathymInc"]
+  fathymIt: ["fathymIt", "twitter"],
+  twitter: ["twitter"],
+  httpsgithubcomfathym: ["httpsgithubcomfathym", "gitHub"],
+  gitHub: ["gitHub"],
+  httpswwwfacebookcomFathymInc: ["httpswwwfacebookcomFathymInc", "facebook"],
+  facebook: ["facebook"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -575,13 +599,17 @@ type NodeDefaultElementType = {
   httpswwwproadjectcom: "a";
   httpswwwhabistackcomdocs: "a";
   httpswwwhabistackcomblog: "a";
-  supportfathymcom: "a";
+  mailtosupportfathymcom: "a";
+  httpswwwfathymcom: "a";
   textInput: typeof TextInput;
   button: typeof Button;
   img: typeof p.PlasmicImg;
   fathymIt: typeof IconLink;
+  twitter: "svg";
   httpsgithubcomfathym: typeof IconLink;
+  gitHub: "svg";
   httpswwwfacebookcomFathymInc: typeof IconLink;
+  facebook: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -661,15 +689,19 @@ export const PlasmicFooter = Object.assign(
     httpswwwproadjectcom: makeNodeComponent("httpswwwproadjectcom"),
     httpswwwhabistackcomdocs: makeNodeComponent("httpswwwhabistackcomdocs"),
     httpswwwhabistackcomblog: makeNodeComponent("httpswwwhabistackcomblog"),
-    supportfathymcom: makeNodeComponent("supportfathymcom"),
+    mailtosupportfathymcom: makeNodeComponent("mailtosupportfathymcom"),
+    httpswwwfathymcom: makeNodeComponent("httpswwwfathymcom"),
     textInput: makeNodeComponent("textInput"),
     button: makeNodeComponent("button"),
     img: makeNodeComponent("img"),
     fathymIt: makeNodeComponent("fathymIt"),
+    twitter: makeNodeComponent("twitter"),
     httpsgithubcomfathym: makeNodeComponent("httpsgithubcomfathym"),
+    gitHub: makeNodeComponent("gitHub"),
     httpswwwfacebookcomFathymInc: makeNodeComponent(
       "httpswwwfacebookcomFathymInc"
     ),
+    facebook: makeNodeComponent("facebook"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
